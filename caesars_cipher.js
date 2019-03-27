@@ -1,10 +1,6 @@
 // Is the character alphabetic?
 function isAlpha(str) {
-  if (str.length === 1 && str.match(/^[a-z]+$/i)) {
-    return true;
-  }
-
-  return false;
+  return str.length === 1 && (/^[a-z]+$/i).test(str);
 }
 
 // Caesars cipher function
